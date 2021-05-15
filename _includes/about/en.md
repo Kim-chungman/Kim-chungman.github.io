@@ -1,33 +1,30 @@
-Hi, I am _@huxpro_ (Huang, Xuan), an UI/Frontend engineer & designer, accidentally growing into a compiler hacker. My current interests range from programming languages theory and implementation in general (compiler, type system, type-based formal verification, virtual machine, runtime systems, garbage collection) to software engineering in the tech industry (client-side web/mobile app development, server-side backend, user interface and UX, developer infrastructure and DX). 
+안녕하세요 저는 금융IT 개발자를 꿈꾸는 예비개발자 김충만입니다.
+저는 전남대학교 경제학,산업공학을 전공하고 현재 한국폴리텍대학 광명융합기술교육원에서 채용연계형 교육을 받고 있습니다.
 
-I'm currently working on the [Hermes JavaScript Engine](https://hermesengine.dev/) at [Facebook](http://facebook.com/). I was also involved in some of the [Facebook Reality Labs](https://tech.fb.com/ar-vr/) and the [ReasonML](https://reasonml.github.io/) (now [ReScript](https://rescript-lang.org/)) efforts. I'm also passionated about [React](https://reactjs.org/) and [React Native](https://reactnative.dev/). 
+현재 IT 기술의 발달과 언택드 서비스가 발전하면서 고객이 금융회사를 가지 않도록 충분히 거래 할 수 있는 세상이 되었습니다. 
+위기는 곧 기회라는 유명한 말이 있습니다. 금융을 중심에 두고 IT기술의 발전은 금융사업의 발전을 돕고있기 때문입니다. 
+고객의 자산을 관리함에 있어 수 많은 정보를 효과적으로 관리 할 수 있고 기술을 활용한다면 충분한 도움을 받을 수 있다고 생각합니다. 
+저는 학교를 다니면서 이런 좋은 기술들을 배우고 활용하기 위해 경제학을 전공하면서 공학계열에 복수전공 했습니다.
 
-In the past, I worked on [Alitrip (Fliggy)](https://www.alitrip.com/) mobile and web apps under the [Alibaba Group](https://en.wikipedia.org/wiki/Alibaba_Group), found and lead front-end infrastructure team at an unicorn startup company [Beijing Weiying (a.k.a. WePiao, now acquired by Maoyan)](https://www.crunchbase.com/organization/beijing-weiying-technology), and helped [Ele.me (now acquired by Alibaba)](https://en.wikipedia.org/wiki/Ele.me) to upgrade their mobile web site into [the first influential PWA (progressive web app) in China](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509).
+현재는 광명융합기술교육원에서 응용 소프트웨어 개발, 빅데이터 수집/분석/처리, 인공지능 신기술, 클라우드 기반 정보시스템 운영능력을 갖춘 인재라는 목표를 가지고 수업을 듣고있습니다.
+![교육과정](https://user-images.githubusercontent.com/79954014/118357904-5125b380-b5b7-11eb-8a5e-a4cebef24509.jpg)
 
-I studied BA, Digital Media Art at [Communication University of China](https://en.wikipedia.org/wiki/Communication_University_of_China) and MS, Computer Science (with a focus on programming languages) at [Rochester Institute of Technology](https://en.wikipedia.org/wiki/Rochester_Institute_of_Technology).
+<교육과정>
 
-##### [My PL Spectrum (WIP 🚧)](https://huangxuan.me/2020/05/05/pl-chart/)
+* 응용소프트웨어 개발
+- 웹 프론트엔드 개발 : Java script (Reat, Veu)
+- 서버 백엔드 개발 : Java, Spring frmework
 
-I made a chart to visualize my experiences and interests on some of the programming languages. I know. I know this is always contraversial. But it's just something quite self-entertaining to do. So bare with me and have fun reading that!
+* 빅데이터 전문가 양성
+- R을 활용한 데이터 분석 : Hadoop, Splunk를 활용한 빅데이터 전문가 교육
 
-##### Appearence
+* 클라우드 기반 대규모 엔터프라이즈 환경 운영
+- 3-tier architecture 환경 구축 및 운영(web server, web application server, dbms)
+- docker 기반의 클라우드 운영
+- 상용 제품을 활용한 클라우드 PaaS의 및 운영
 
-- [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI Guangzhou 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux Beijing 2017
-- PWA Rehashing · Baidu HQ Beijing 2017
-- [Service Worker 101][5] · GDG DevFest Beijing 2016
-- [Progressive Web Apps][4] · QCon Shanghai 2016
-- Progressive Web App in my POV · GDG IO Redux Beijing 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript Modularization Journey][1] · 2015
+<인턴 및 대외활동>
 
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
+2019년 하나은행 PB사업부 인턴(2019.08 한달간)
+2020년 청년취업아카데미 수료
+2021년 KB증권 인턴(2021.02 한달간)
