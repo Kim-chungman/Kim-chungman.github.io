@@ -4,7 +4,7 @@ title:      "Introduce"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2021-03-03 12:00:00
 author:     "Chungman"
-header-img: "img/증명사진.PNG"
+header-img: "img/하금티.png"
 catalog: true
 tags:
     - Introduce
