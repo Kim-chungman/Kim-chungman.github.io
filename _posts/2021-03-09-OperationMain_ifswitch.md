@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      "OperationMain_ifswitch"
+subtitle:   " \"Java Stuty\""
+date:       2021-03-09 12:00
+author:     "Chungman"
+catalog: true
+tags:
+    - Java_Study
+    - Lecture02(0309)
+---
+
 package Lecture2;
 
 public class OperationMain_ifswitch {
