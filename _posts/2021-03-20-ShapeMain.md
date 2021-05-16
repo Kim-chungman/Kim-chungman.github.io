@@ -1,0 +1,270 @@
+---
+layout:     post
+title:      "ShapeMain"
+subtitle:   " \"Java Stuty\""
+date:       2021-03-20 12:00
+author:     "Chungman"
+catalog: true
+tags:
+    - Java_Study
+    - 주말과제(0320)
+---
+
+# ShapeMain
+```
+package Homework;
+
+
+public class ShapeMain {
+
+	public static void main(String[] args) {
+		
+		Shape shape = new Shape();					// Shape형의 shape변수생성
+		shape.select();								// 프로그램 호출
+
+	}
+
+}
+```
+
+# Shape
+```
+package Homework;
+/**
+ * 	 <구상>							상속관계(화살표)
+ * Circle   ㅡ> 		Square		ㅡ>		Shape	<ㅡ		Rectangle	<ㅡ	Triangle
+ *  <필요>			<필요>				<필요>			 <필요>		  	 <필요>
+ * 가로(반지름)		   가로(밑변=높이)		     가로				가로(밑변)			가로(밑변)
+ * 										 높이				세로(높이)			세로(높이)
+ * 이름				이름					 이름				이름				이름
+ * PI, 면적(double)	면적				  랜덤,스캐너			면적				면적(double)
+ */
+import java.util.Random;
+import java.util.Scanner;
+
+public class Shape {
+
+	private String name;
+	private int width;
+	private int height;
+	
+	Scanner sc = new Scanner(System.in);
+	static Random r = new Random();
+	
+	public Shape(){
+
+	}
+	
+	public Shape(String name, int width) {					// 정사각형과 원의 이름과 가로길이를 생성하기위한 생성자
+		this.name = name;
+		this.width = width;
+	}
+	
+	public Shape(String name, int width, int height) {		// 직사각형과 삼각형의 이름과 가로, 세로길이를 생성하기위한 생성자
+		this.name = name;
+		this.width = width;
+		this.height = height;
+	}
+	
+	public String getName() {								// 이름에 접근하기위한 메소드
+		return name;
+	}
+	
+	public int getWidth() {									// 가로에 접근하기위한 메소드
+		return width;
+	}
+	
+	public int getHeight() {								// 세로에 접근하기위한 메소드
+		return height;
+	}
+	
+	public int setWidth(int width) {
+		this.width = width;
+		return width;
+	}
+	
+	public int setHeight(int height) {
+		this.height = height;
+		return height;
+	}
+	
+	public void select() {									// 도형선택
+		System.out.println("도형을 선택하세요(1. 직사각형, 2. 정사각형, 3.삼각형, 4.원) => ");
+		int num = sc.nextInt();
+		sc.nextLine();
+		if(num > 4 || num < 1) {							// 1~4 이외 숫자 입력시 다시 실행
+			System.out.println("1~4 중에 선택해주세요.");
+			select();
+		}
+		setArea(num);
+	}
+	
+	public void setArea(int num) {							// 도형의 면적구하기
+		switch(num) {
+			case 1 :										// 직사각형일때
+				Rectangle rectangle = new Rectangle("직사각형", random(2, 9), random(2, 9));
+				rectangle.rectangleArea();
+				rectangle.print();
+				break;
+			case 2 :										// 정사각형일때
+				Square square = new Square("정사각형", random(2, 9));
+				square.squareArea();
+				square.print();
+				break;
+			case 3 :										// 삼각형일때
+				Triangle triangle = new Triangle("삼각형", random(2, 9), random(2, 9));
+				triangle.triangleArea();
+				triangle.print();
+				break;
+			case 4 :										// 원일때
+				Circle circle = new Circle("원", random(2, 9));
+				circle.circleArea();
+				circle.print();
+				break;
+			default :
+		}
+	}
+	
+	public static int random(int min, int max) {			// 2~9사이의 랜덤숫자 출력을 위한 메소드
+		return r.nextInt(max-min+1)+min;
+	}
+}
+```
+
+# Circle
+```
+package Homework;
+public class Circle extends Square{
+	
+	private final double PI = 3.14;						// PI값 3.14로 상수고정
+	private double area;								// area는 double형
+	
+	public Circle(){
+		
+	}
+	
+	public Circle(String name, int width) {				// 부모클래스인 정사각형(Square) 생성자호출
+		super(name, width);								// 정사각형클래스는 해당하는 Shape 생성자호출
+	}
+	
+	public double circleArea() {						// 원의 면적
+		area = super.getWidth()*super.getWidth()*PI;
+		return area;
+	}
+	
+	public void print() {								// 출력
+		System.out.println("선택하신 도형은 " + super.getName() + "입니다.");
+		System.out.print("반지름이 " + super.getWidth() + "인 " + super.getName() +"의 넓이는 " + area + "입니다.");
+	}
+
+}
+```
+
+# Rectangle
+```
+package Homework;
+
+
+public class Rectangle extends Shape {
+	
+	private int area;
+	
+	public Rectangle(){
+		
+	}
+	
+	public Rectangle(String name, int width, int height) {		// 부모클래스인 Shape에서 해당하는 생성자 호출
+		super(name, width, height);
+	}
+	
+	public String getName() {									// 이름 불러오기
+		return super.getName();
+	}
+	
+	public int getWidth() {										// 가로길이 불러오기
+		return super.getWidth();
+	}
+	
+	public int getHeight() {									// 세로길이 불러오기
+		return super.getHeight();
+	}
+	
+	public int rectangleArea() {								// 직사각형 면적구하기
+		this.area = super.getWidth()*super.getHeight();
+		return area;
+	}
+	
+	public void print() {										// 출력
+		System.out.println("선택하신 도형은 " + getName() + "입니다.");
+		System.out.print("가로가 " + getWidth() + "고 세로가 " + getHeight() + "인 " + getName() +"의 면적의 넓이는 " + this.area + "입니다.");
+	}
+	
+}
+```
+
+# Square
+```
+package Homework;
+
+
+public class Square extends Shape {
+	
+	private int area;
+
+	public Square(){
+		
+	}
+	
+	public Square(String name, int width) {				// 부모클래스인 Shape에 해당하는 생성자호출
+		super(name, width);
+	}
+	
+	public int getWidth() {								// 가로길이(=세로) 불러오기
+		return super.getWidth();
+	}
+	
+	public String getName() {							// 이름 불러오기
+		return super.getName();
+	}
+	
+	public int squareArea() {							// 정사각형 면적구하기
+		this.area = super.getWidth()*super.getWidth();
+		return area;
+	}
+	
+	public void print() {								// 출력
+		System.out.println("선택하신 도형은 " + super.getName() + "입니다.");
+		System.out.print("가로와 세로가 " + super.getWidth() + "인 " + super.getName() +"의 면적의 넓이는 " + this.area + "입니다.");
+	}
+}
+```
+
+# Triangle
+```
+package Homework;
+
+public class Triangle extends Rectangle {
+	
+	private double area;
+	
+	Triangle(){
+		
+	}
+	
+	Triangle(String name, int width, int height){				// 부모클래스인 Rectangle에 해당하는 생성자 호출
+		super(name, width, height);								// Rectangle은 Shape에 해당하는 생성자 호출
+	}
+	
+	public double triangleArea() {								// 삼각형 면적구하기
+		area = (super.getWidth()*super.getHeight())/2;
+		return area;
+	}
+	
+	public void print() {										// 출력
+		System.out.println("선택하신 도형은 " + super.getName() + "입니다.");
+		System.out.print("밑변이 " + super.getWidth() + "고 높이가 " + super.getHeight() + "인 " + super.getName() +"의 면적의 넓이는 " + area + "입니다.");
+	}
+	
+
+}
+```
