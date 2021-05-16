@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      "LottoMain"
+subtitle:   " \"Java Stuty\""
+date:       2021-03-08 12:00:00
+author:     "Chungman"
+catalog: true
+tags:
+    - Java_Study
+    - Lecture01(0308)
+---
+
 package kr.ac.kopo.lecture1;
 
 public class LottoMain {
