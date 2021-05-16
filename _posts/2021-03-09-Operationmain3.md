@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      "Operationmain3"
+subtitle:   " \"Java Stuty\""
+date:       2021-03-09 12:00
+author:     "Chungman"
+catalog: true
+tags:
+    - Java_Study
+    - Lecture02(0309)
+---
+
 package Lecture2;
 
 import java.util.Scanner;	// 자동 import = ctrl + shift + o
