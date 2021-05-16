@@ -9,7 +9,7 @@ tags:
     - Java_Study
     - Lecture05(0312)
 ---
-
+```
 package Review;
 
 import java.util.Scanner;
@@ -100,3 +100,4 @@ public class HomeWorkReview04 {
 	}
 
 }
+```
