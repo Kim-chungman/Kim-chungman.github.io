@@ -4,7 +4,6 @@ title:      "HelloWorld"
 subtitle:   " \"Java Stuty\""
 date:       2021-03-08 12:00:00
 author:     "Chungman"
-/* header-img: "img/증명사진.PNG" */
 catalog: true
 tags:
     - Java_Study
