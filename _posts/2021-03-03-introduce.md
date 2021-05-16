@@ -2,7 +2,7 @@
 layout:     post
 title:      "Introduce"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2021-03-03 12:00:00
+date:       2021-03-03 12:00
 author:     "Chungman"
 header-img: "img/하금티.png"
 catalog: true
